@@ -353,7 +353,7 @@ class HTML2Text(HTMLParser.HTMLParser):
             if self.blockquote > 0:
                 self.o("  \n> ")
             else:
-                self.o("  \n")
+                self.o("\n")
 
         if tag == "hr" and start:
             self.p()
